@@ -11,7 +11,7 @@ import java.util.Date;
 
 @RestController
 public class PaymentController {
-    private PaymentProcessingHandler paymentProcessingHandler;
+    private final PaymentProcessingHandler paymentProcessingHandler;
 
     public PaymentController(PaymentProcessingHandler paymentProcessingHandler){
         this.paymentProcessingHandler = paymentProcessingHandler;
