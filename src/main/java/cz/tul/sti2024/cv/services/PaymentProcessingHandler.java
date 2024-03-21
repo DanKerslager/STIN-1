@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 @Component
 public class PaymentProcessingHandler {
-    private HashMap<String, IPaymentService> paymentProcessingHandler;
+    private final HashMap<String, IPaymentService> paymentProcessingHandler;
     private final PaymentTransformations paymentTransformations;
 
     public PaymentProcessingHandler(CardPaymentService cardPaymentService, CashPaymentService cashPaymentService,
