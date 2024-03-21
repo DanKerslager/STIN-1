@@ -16,7 +16,7 @@ public class PaymentProcessingHandler {
         this.paymentTransformations = paymentTransformations;
         paymentProcessingHandler = new HashMap<>();
         paymentProcessingHandler.put("CASH",cashPaymentService);
-        paymentProcessingHandler.put("CARD", cardPaymentService);
+        paymentProcessingHandler.put("CARD",cardPaymentService);
     }
 
     public void processPayment(String payload) throws JsonProcessingException {
